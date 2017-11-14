@@ -1,4 +1,4 @@
-package sample;
+package model;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -14,10 +14,8 @@ public class Messages {
     public static ObservableList<String> getMessages() {
         if (messages == null) {
             messages = FXCollections.observableArrayList();
-            return messages;
-        } else {
-            return messages;
         }
+        return messages;
     }
     public static void addMessage(String message) {
         messages.add(message);
